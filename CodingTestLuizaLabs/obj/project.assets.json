@@ -11794,7 +11794,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\francis.silva\\.nuget\\packages\\": {},
+    "C:\\Users\\edu_f\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -11803,14 +11803,14 @@
       "projectUniqueName": "C:\\_dev\\CodingTestLuizaLabs\\CodingTestLuizaLabs\\CodingTestLuizaLabs.csproj",
       "projectName": "CodingTestLuizaLabs",
       "projectPath": "C:\\_dev\\CodingTestLuizaLabs\\CodingTestLuizaLabs\\CodingTestLuizaLabs.csproj",
-      "packagesPath": "C:\\Users\\francis.silva\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\edu_f\\.nuget\\packages\\",
       "outputPath": "C:\\_dev\\CodingTestLuizaLabs\\CodingTestLuizaLabs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\francis.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edu_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

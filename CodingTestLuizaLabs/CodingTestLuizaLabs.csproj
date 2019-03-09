@@ -12,8 +12,6 @@
     <Folder Include="DB\Dataset\" />
     <Folder Include="DB\Migrations\" />
     <Folder Include="Hypermedia\" />
-    <Folder Include="Model\Base\" />
-    <Folder Include="Model\Context\" />
     <Folder Include="Repository\Generic\" />
     <Folder Include="Repository\Implementations\" />
     <Folder Include="wwwroot\" />
