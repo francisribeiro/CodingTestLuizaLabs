@@ -1,5 +1,6 @@
 ﻿using CodingTestLuizaLabs.Business;
 using CodingTestLuizaLabs.Business.Implementations;
+using CodingTestLuizaLabs.Model;
 using CodingTestLuizaLabs.Model.Context;
 using CodingTestLuizaLabs.Repository.Generic;
 using Microsoft.AspNetCore.Builder;
@@ -20,7 +21,7 @@ namespace CodingTestLuizaLabs
         {
             _configuration = configuration;
         }
-               
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -29,8 +30,8 @@ namespace CodingTestLuizaLabs
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddScoped<IProductBusiness, ProductBusinessImpl>();
-            services.AddScoped<IUserBusiness, UserBusinessImpl>();
+            services.AddScoped<IBusiness<Product>, GenericBusiness<Product>>();
+            services.AddScoped<IBusiness<User>, GenericBusiness<User>>();
 
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
         }
