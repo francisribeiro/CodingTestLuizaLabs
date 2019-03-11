@@ -1,10 +1,11 @@
 ﻿using CodingTestLuizaLabs.Business;
 using CodingTestLuizaLabs.Model;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace CodingTestLuizaLabs.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : Controller
     {
@@ -15,13 +16,20 @@ namespace CodingTestLuizaLabs.Controllers
             _userBusiness = userBusiness;
         }
 
-        [HttpGet("{page_size}/{page}")]
-        public IActionResult GetPagedSearch([FromQuery] int pageSize, int page)
+        [HttpGet]
+        [ProducesResponseType(200, Type = typeof(List<User>))]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        public IActionResult GetPagedSearch([FromQuery] int page_size, [FromQuery] int page)
         {
-            return new OkObjectResult(_userBusiness.FindWithPagedSearch(pageSize, page));
+            return new OkObjectResult(_userBusiness.FindWithPagedSearch(page_size, page));
         }
 
         [HttpPost]
+        [ProducesResponseType(201, Type = typeof(User))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         public IActionResult Post([FromBody]User user)
         {
             if (user == null) return BadRequest();
@@ -29,6 +37,9 @@ namespace CodingTestLuizaLabs.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType(202, Type = typeof(User))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         public IActionResult Put([FromBody]User user)
         {
             if (user == null) return BadRequest();
@@ -37,16 +48,10 @@ namespace CodingTestLuizaLabs.Controllers
             return new OkObjectResult(updatedPerson);
         }
 
-        [HttpPatch]
-        public IActionResult Patch([FromBody]User user)
-        {
-            if (user == null) return BadRequest();
-            var updatedPerson = _userBusiness.Update(user);
-            if (updatedPerson == null) return BadRequest();
-            return new OkObjectResult(updatedPerson);
-        }
-
         [HttpDelete("{id}")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         public IActionResult Delete(int id)
         {
             _userBusiness.Delete(id);

@@ -6,9 +6,11 @@ using CodingTestLuizaLabs.Repository.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace CodingTestLuizaLabs
 {
@@ -30,9 +32,17 @@ namespace CodingTestLuizaLabs
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            // Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "API Coding Test Luiza Labs", Version = "v1" });
+            });
+
+            // Dependency Injection
             services.AddScoped<IBusiness<Product>, GenericBusiness<Product>>();
             services.AddScoped<IBusiness<User>, GenericBusiness<User>>();
 
+            // Dependency Injection of GenericRepository
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
         }
 
@@ -49,7 +59,22 @@ namespace CodingTestLuizaLabs
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                name: "DefaultApi",
+                template: "{controller=Values}/{id?}");
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Coding Test Luiza Labs ");
+            });
+
+            var option = new RewriteOptions();
+            option.AddRedirect("^$", "swagger");
+            app.UseRewriter(option);
         }
     }
 }

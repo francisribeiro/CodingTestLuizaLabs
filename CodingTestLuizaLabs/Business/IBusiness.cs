@@ -9,6 +9,6 @@ namespace CodingTestLuizaLabs.Business
         T Update(T entity);
         void Delete(long id);
         bool Exists(long id);
-        PagedSearchDTO<T> FindWithPagedSearch(int pageSize, int page);
+        PagedSearchDTO<T> FindWithPagedSearch(int page_size, int page);
     }
 }

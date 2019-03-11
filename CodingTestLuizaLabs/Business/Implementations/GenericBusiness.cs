@@ -38,7 +38,7 @@ namespace CodingTestLuizaLabs.Business.Implementations
             return _repository.Exists(id);
         }
 
-        public PagedSearchDTO<T> FindWithPagedSearch(int pageSize, int page)
+        public PagedSearchDTO<T> FindWithPagedSearch(int page_size, int page)
         {
             throw new System.NotImplementedException();
         }
