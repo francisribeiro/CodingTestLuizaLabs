@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e071b1a7c9d575b1b3d9ba6c9a1be1d9c6701ca2"
+    "signature": "7e88bad4201b241c81911ff865a3f9e46d3f2a90"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "Tapioca.HATEOAS": "1.0.4"
         },
         "runtime": {
           "CodingTestLuizaLabs.dll": {}
@@ -205,6 +206,20 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "Tapioca.HATEOAS/1.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Tapioca.HATEOAS.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Tapioca.HATEOAS.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3210,6 +3225,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Tapioca.HATEOAS/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8hp6oNzJV8nbOl6eevAxo0pZsdYIFUng3Pyg0/re47p8e3d0cViG+qmBz3AayrO+CnZ8jqqrkkr264l/8P5QOw==",
+      "path": "tapioca.hateoas/1.0.4",
+      "hashPath": "tapioca.hateoas.1.0.4.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
