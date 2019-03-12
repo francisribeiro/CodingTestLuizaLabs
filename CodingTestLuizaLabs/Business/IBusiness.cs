@@ -1,6 +1,4 @@
-﻿using Tapioca.HATEOAS.Utils;
-
-namespace CodingTestLuizaLabs.Business
+﻿namespace CodingTestLuizaLabs.Business
 {
     public interface IBusiness<T> where T : class
     {

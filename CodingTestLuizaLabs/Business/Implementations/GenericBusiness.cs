@@ -1,12 +1,11 @@
 ﻿using CodingTestLuizaLabs.Model.Base;
 using CodingTestLuizaLabs.Repository.Generic;
-using Tapioca.HATEOAS.Utils;
 
 namespace CodingTestLuizaLabs.Business.Implementations
 {
     public class GenericBusiness<T> : IBusiness<T> where T : BaseEntity
     {
-        private IRepository<T> _repository;
+        private readonly IRepository<T> _repository;
 
         public GenericBusiness(IRepository<T> repository)
         {

@@ -9,7 +9,7 @@ namespace CodingTestLuizaLabs.Controllers
     [ApiController]
     public class ProductController : Controller
     {
-        private IProductBusiness _productBusiness;
+        private readonly IProductBusiness _productBusiness;
 
         public ProductController(IProductBusiness productBusiness)
         {

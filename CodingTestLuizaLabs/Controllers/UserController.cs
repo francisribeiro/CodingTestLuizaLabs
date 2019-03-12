@@ -9,7 +9,7 @@ namespace CodingTestLuizaLabs.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        private IUserBusiness _userBusiness;
+        private readonly IUserBusiness _userBusiness;
 
         public UserController(IUserBusiness userBusiness)
         {

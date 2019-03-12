@@ -1,10 +1,10 @@
 ﻿using CodingTestLuizaLabs.Model;
-using Tapioca.HATEOAS.Utils;
+using System.Collections.Generic;
 
 namespace CodingTestLuizaLabs.Business
 {
     public interface IProductBusiness : IBusiness<Product>
     {
-        PagedSearchDTO<Product> FindWithPagedSearch(int pageSize, int page);
+        List<Product> FindWithPagedSearch(int pageSize, int page);
     }
 }

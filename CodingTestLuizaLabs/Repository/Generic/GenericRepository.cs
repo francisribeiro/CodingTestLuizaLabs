@@ -67,25 +67,6 @@ namespace CodingTestLuizaLabs.Repository.Generic
             return _dataset.FromSql<T>(query).ToList();
         }
 
-        // https://stackoverflow.com/questions/40557003/entity-framework-core-count-does-not-have-optimal-performance
-        public int GetCount(string query)
-        {
-            var result = "";
-
-            using (var connection = _context.Database.GetDbConnection())
-            {
-                connection.Open();
-
-                using (var command = connection.CreateCommand())
-                {
-                    command.CommandText = query;
-                    result = command.ExecuteScalar().ToString();
-                }
-            }
-
-            return Int32.Parse(result);
-        }
-
         public T Update(T item)
         {
             if (!Exists(item.Id)) return null;
