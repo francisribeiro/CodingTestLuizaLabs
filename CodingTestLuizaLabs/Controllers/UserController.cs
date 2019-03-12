@@ -9,9 +9,9 @@ namespace CodingTestLuizaLabs.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        private IBusiness<User> _userBusiness;
+        private IUserBusiness _userBusiness;
 
-        public UserController(IBusiness<User> userBusiness)
+        public UserController(IUserBusiness userBusiness)
         {
             _userBusiness = userBusiness;
         }

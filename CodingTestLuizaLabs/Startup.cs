@@ -1,6 +1,5 @@
 ﻿using CodingTestLuizaLabs.Business;
 using CodingTestLuizaLabs.Business.Implementations;
-using CodingTestLuizaLabs.Model;
 using CodingTestLuizaLabs.Model.Context;
 using CodingTestLuizaLabs.Repository.Generic;
 using Microsoft.AspNetCore.Builder;
@@ -39,8 +38,8 @@ namespace CodingTestLuizaLabs
             });
 
             // Dependency Injection
-            services.AddScoped<IBusiness<Product>, GenericBusiness<Product>>();
-            services.AddScoped<IBusiness<User>, GenericBusiness<User>>();
+            services.AddScoped<IProductBusiness, ProductBusinessImpl>();
+            services.AddScoped<IUserBusiness, UserBusinessImpl>();
 
             // Dependency Injection of GenericRepository
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
