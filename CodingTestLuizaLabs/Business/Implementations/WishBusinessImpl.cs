@@ -17,6 +17,17 @@ namespace CodingTestLuizaLabs.Business.Implementations
             _wishRepository = wishRepository;
         }
 
+        public Wish[] Create(long userId, Wish[] wishList)
+        {
+            foreach (Wish wish in wishList)
+            {
+                wish.UserId = userId;
+                _repository.Create(wish);
+            }
+
+            return wishList;
+        }
+
         public void Delete(long userId, long productId)
         {
             _wishRepository.Delete(userId, productId);

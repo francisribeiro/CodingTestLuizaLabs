@@ -26,14 +26,14 @@ namespace CodingTestLuizaLabs.Controllers
             return new OkObjectResult(_wishBusiness.FindWithPagedSearch(userId, page_size, page));
         }
 
-        [HttpPost]
+        [HttpPost("{userId}")]
         [ProducesResponseType(201, Type = typeof(Wish))]
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
-        public IActionResult Post([FromBody]Wish wish)
+        public IActionResult Post(long userId, [FromBody]Wish[] wishes)
         {
-            if (wish == null) return BadRequest();
-            return new OkObjectResult(_wishBusiness.Create(wish));
+            if (wishes == null) return BadRequest();
+            return new OkObjectResult(_wishBusiness.Create(userId, wishes));
         }
 
         [HttpDelete("{userId}/{productId}")]

@@ -2,6 +2,7 @@
 using CodingTestLuizaLabs.Business.Implementations;
 using CodingTestLuizaLabs.Model.Context;
 using CodingTestLuizaLabs.Repository.Generic;
+using CodingTestLuizaLabs.Repository.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -37,9 +38,13 @@ namespace CodingTestLuizaLabs
                 c.SwaggerDoc("v1", new Info { Title = "API Coding Test Luiza Labs", Version = "v1" });
             });
 
-            // Dependency Injection
+            // Dependency Injection Business
             services.AddScoped<IProductBusiness, ProductBusinessImpl>();
             services.AddScoped<IUserBusiness, UserBusinessImpl>();
+            services.AddScoped<IWishBusiness, WishBusinessImpl>();
+
+            // Dependency Injection Repository
+            services.AddScoped<IWishRepository, WishRepository>();
 
             // Dependency Injection of GenericRepository
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));

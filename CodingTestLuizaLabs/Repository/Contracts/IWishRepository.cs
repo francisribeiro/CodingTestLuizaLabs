@@ -1,4 +1,6 @@
-﻿namespace CodingTestLuizaLabs.Repository.Generic
+﻿using CodingTestLuizaLabs.Model;
+
+namespace CodingTestLuizaLabs.Repository.Generic
 {
     public interface IWishRepository
     {
