@@ -4672,18 +4672,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "Tapioca.HATEOAS/1.0.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.0.4"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/Tapioca.HATEOAS.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/Tapioca.HATEOAS.dll": {}
-        }
       }
     }
   },
@@ -12641,18 +12629,6 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "Tapioca.HATEOAS/1.0.4": {
-      "sha512": "FuBmejW6SDAYTPgyDhN8VZ679qjemkvn7upgWTDjS6eysOE/r2WwEbz+IrI01JIuRDC8eBiGHM1Hfr5hNJg1iw==",
-      "type": "package",
-      "path": "tapioca.hateoas/1.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp2.0/Tapioca.HATEOAS.dll",
-        "tapioca.hateoas.1.0.4.nupkg.sha512",
-        "tapioca.hateoas.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -12661,8 +12637,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
-      "Swashbuckle.AspNetCore >= 4.0.1",
-      "Tapioca.HATEOAS >= 1.0.4"
+      "Swashbuckle.AspNetCore >= 4.0.1"
     ]
   },
   "packageFolders": {
@@ -12729,10 +12704,6 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[4.0.1, )"
-          },
-          "Tapioca.HATEOAS": {
-            "target": "Package",
-            "version": "[1.0.4, )"
           }
         },
         "imports": [

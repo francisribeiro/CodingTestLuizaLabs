@@ -21,9 +21,11 @@ namespace CodingTestLuizaLabs.Business.Implementations
         {
             foreach (Wish wish in wishList)
             {
-                wish.UserId = userId;
-                _repository.Create(wish);
+                wish.IdUser = userId;
+                _wishRepository.Create(wish);
             }
+
+            _wishRepository.Save();
 
             return wishList;
         }
@@ -38,11 +40,11 @@ namespace CodingTestLuizaLabs.Business.Implementations
             page = page > 0 ? page - 1 : 0;
 
             string query = @"SELECT * FROM Products p";
-            query = query + $"  WHERE p.Id IN";
-            query = query + $"      (SELECT w.ProductId FROM Whishes w";
-            query = query + $"          WHERE w.UserId = {userId})";
-            query = query + $"  ORDER BY p.Name DESC OFFSET({page}) * {pageSize}";
-            query = query + $"  ROWS FETCH NEXT {pageSize} ROWS ONLY";
+            query = query + $" WHERE p.Id IN";
+            query = query + $" (SELECT w.IdProduct FROM Whishes w";
+            query = query + $" WHERE w.IdUser = {userId})";
+            query = query + $" ORDER BY p.Id ASC OFFSET({page}) * {pageSize}";
+            query = query + $" ROWS FETCH NEXT {pageSize} ROWS ONLY";
 
             return _productRepository.FindWithPagedSearch(query);
         }

@@ -55,11 +55,6 @@ namespace CodingTestLuizaLabs.Repository.Generic
             return _dataset.Any(i => i.Id.Equals(id));
         }
 
-        public T FindById(long id)
-        {
-            return _dataset.SingleOrDefault(i => i.Id.Equals(id));
-        }
-
         public List<T> FindWithPagedSearch(string query)
         {
             return _dataset.FromSql(query).ToList();

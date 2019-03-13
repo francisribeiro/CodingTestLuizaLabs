@@ -7,43 +7,43 @@ namespace CodingTestLuizaLabs.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ProductController : Controller
+    public class UsersController : Controller
     {
-        private readonly IProductBusiness _productBusiness;
+        private readonly IUserBusiness _userBusiness;
 
-        public ProductController(IProductBusiness productBusiness)
+        public UsersController(IUserBusiness userBusiness)
         {
-            _productBusiness = productBusiness;
+            _userBusiness = userBusiness;
         }
 
         [HttpGet]
-        [ProducesResponseType(200, Type = typeof(List<Product>))]
+        [ProducesResponseType(200, Type = typeof(List<User>))]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
         public IActionResult GetPagedSearch([FromQuery] int page_size, [FromQuery] int page)
         {
-            return new OkObjectResult(_productBusiness.FindWithPagedSearch(page_size, page));
+            return new OkObjectResult(_userBusiness.FindWithPagedSearch(page_size, page));
         }
 
         [HttpPost]
-        [ProducesResponseType(202, Type = typeof(Product))]
+        [ProducesResponseType(201, Type = typeof(User))]
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
-        public IActionResult Post([FromBody]Product product)
+        public IActionResult Post([FromBody]User user)
         {
-            if (product == null) return BadRequest();
-            return new OkObjectResult(_productBusiness.Create(product));
+            if (user == null) return BadRequest();
+            return new OkObjectResult(_userBusiness.Create(user));
         }
 
         [HttpPut]
-        [ProducesResponseType(202, Type = typeof(Product))]
+        [ProducesResponseType(202, Type = typeof(User))]
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
-        public IActionResult Put([FromBody]Product product)
+        public IActionResult Put([FromBody]User user)
         {
-            if (product == null) return BadRequest();
-            var updatedPerson = _productBusiness.Update(product);
+            if (user == null) return BadRequest();
+            var updatedPerson = _userBusiness.Update(user);
             if (updatedPerson == null) return BadRequest();
             return new OkObjectResult(updatedPerson);
         }
@@ -54,7 +54,7 @@ namespace CodingTestLuizaLabs.Controllers
         [ProducesResponseType(401)]
         public IActionResult Delete(int id)
         {
-            _productBusiness.Delete(id);
+            _userBusiness.Delete(id);
             return NoContent();
         }
     }

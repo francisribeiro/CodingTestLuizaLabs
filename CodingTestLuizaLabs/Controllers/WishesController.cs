@@ -7,11 +7,11 @@ namespace CodingTestLuizaLabs.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class WishController : Controller
+    public class WishesController : Controller
     {
         private readonly IWishBusiness _wishBusiness;
 
-        public WishController(IWishBusiness wishBusiness)
+        public WishesController(IWishBusiness wishBusiness)
         {
             _wishBusiness = wishBusiness;
         }

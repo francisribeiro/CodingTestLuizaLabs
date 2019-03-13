@@ -7,7 +7,6 @@ namespace CodingTestLuizaLabs.Repository.Generic
     {
         T Create(T entity);
         T Update(T entity);
-        T FindById(long id);
         void Delete(long id);
         bool Exists(long? id);
         List<T> FindWithPagedSearch(string query);

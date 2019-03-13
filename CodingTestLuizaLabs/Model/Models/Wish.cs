@@ -1,18 +1,22 @@
 ﻿using CodingTestLuizaLabs.Model.Base;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 
 namespace CodingTestLuizaLabs.Model
 {
     [Table("whishes")]
     public class Wish : BaseEntity
     {
-        public long ProductId { get; set; }
-        public long UserId { get; set; }
+        [DataMember(Order = 2)]
+        public long IdProduct { get; set; }
 
-        [ForeignKey("ProductId")]
+        [DataMember(Order = 3)]
+        public long IdUser { get; set; }
+
+        [ForeignKey("IdProduct")]
         public Product Product { get; set; }
 
-        [ForeignKey("UserId")]
+        [ForeignKey("IdUser")]
         public User User { get; set; }
     }
 }

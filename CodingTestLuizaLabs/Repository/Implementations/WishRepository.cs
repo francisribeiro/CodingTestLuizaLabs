@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using CodingTestLuizaLabs.Model;
+﻿using CodingTestLuizaLabs.Model;
 using CodingTestLuizaLabs.Model.Context;
 using CodingTestLuizaLabs.Repository.Generic;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
 
 namespace CodingTestLuizaLabs.Repository.Implementations
 {
@@ -19,17 +18,34 @@ namespace CodingTestLuizaLabs.Repository.Implementations
             _dataset = _context.Set<Wish>();
         }
 
+        public void Create(Wish entity)
+        {
+            _dataset.Add(entity);
+        }
+
         public void Delete(long userId, long productId)
         {
-            var result = _dataset.SingleOrDefault(w => w.UserId.Equals(userId) && w.ProductId.Equals(productId));
+            var result = _dataset.SingleOrDefault(w => w.IdUser.Equals(userId) && w.IdProduct.Equals(productId));
 
             try
             {
                 if (result != null)
                 {
                     _dataset.Remove(result);
-                    _context.SaveChanges();
+                    Save();
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void Save()
+        {
+            try
+            {
+                _context.SaveChanges();
             }
             catch (Exception ex)
             {
