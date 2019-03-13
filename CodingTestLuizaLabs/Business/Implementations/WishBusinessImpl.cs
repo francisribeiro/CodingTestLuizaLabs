@@ -21,7 +21,7 @@ namespace CodingTestLuizaLabs.Business.Implementations
         {
             foreach (Wish wish in wishList)
             {
-                wish.IdUser = userId;
+                wish.SetUserId(userId);
                 _wishRepository.Create(wish);
             }
 
