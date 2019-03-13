@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Hypermedia\" />
-    <Folder Include="Repository\Implementations\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

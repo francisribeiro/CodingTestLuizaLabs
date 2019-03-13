@@ -18,17 +18,16 @@ namespace CodingTestLuizaLabs.Repository.Generic
             _dataset = _context.Set<T>();
         }
 
-        public T Create(T item)
+        public T Create(T entity)
         {
             try
             {
-                _dataset.Add(item);
+                _dataset.Add(entity);
                 _context.SaveChanges();
-                return item;
+                return entity;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -47,7 +46,6 @@ namespace CodingTestLuizaLabs.Repository.Generic
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -64,25 +62,24 @@ namespace CodingTestLuizaLabs.Repository.Generic
 
         public List<T> FindWithPagedSearch(string query)
         {
-            return _dataset.FromSql<T>(query).ToList();
+            return _dataset.FromSql(query).ToList();
         }
 
-        public T Update(T item)
+        public T Update(T entity)
         {
-            if (!Exists(item.Id)) return null;
+            if (!Exists(entity.Id)) return null;
 
-            var result = _dataset.SingleOrDefault(i => i.Id.Equals(item.Id));
+            var result = _dataset.SingleOrDefault(i => i.Id.Equals(entity.Id));
 
             if (result != null)
             {
                 try
                 {
-                    _context.Entry(result).CurrentValues.SetValues(item);
+                    _context.Entry(result).CurrentValues.SetValues(entity);
                     _context.SaveChanges();
                 }
                 catch (Exception ex)
                 {
-
                     throw ex;
                 }
             }
