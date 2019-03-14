@@ -44,6 +44,7 @@ namespace Wishes.Manager.API
 
             // Dependency Injection Repository
             services.AddScoped<IWishRepository, WishRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             // Dependency Injection of GenericRepository
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
