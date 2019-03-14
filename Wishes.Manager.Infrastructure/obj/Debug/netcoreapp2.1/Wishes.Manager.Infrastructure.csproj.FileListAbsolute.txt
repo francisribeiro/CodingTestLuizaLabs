@@ -1,0 +1,16 @@
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.AssemblyInfo.cs
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.csprojAssemblyReference.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.deps.json
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.runtimeconfig.json
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.runtimeconfig.dev.json
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.csproj.CopyComplete
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Infrastructure\obj\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.pdb

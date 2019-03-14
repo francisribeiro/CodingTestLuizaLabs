@@ -1,0 +1,16 @@
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Business.deps.json
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Business.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Business.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\bin\Debug\netcoreapp2.1\Wishes.Manager.Infrastructure.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.csproj.CoreCompileInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.AssemblyInfoInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.AssemblyInfo.cs
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.csproj.CopyComplete
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Business\obj\Debug\netcoreapp2.1\Wishes.Manager.Business.csprojAssemblyReference.cache

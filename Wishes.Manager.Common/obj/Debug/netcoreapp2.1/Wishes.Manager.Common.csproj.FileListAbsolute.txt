@@ -1,0 +1,9 @@
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.deps.json
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\obj\Debug\netcoreapp2.1\Wishes.Manager.Common.csproj.CoreCompileInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\obj\Debug\netcoreapp2.1\Wishes.Manager.Common.AssemblyInfoInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\obj\Debug\netcoreapp2.1\Wishes.Manager.Common.AssemblyInfo.cs
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\obj\Debug\netcoreapp2.1\Wishes.Manager.Common.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\obj\Debug\netcoreapp2.1\Wishes.Manager.Common.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Common\obj\Debug\netcoreapp2.1\Wishes.Manager.Common.csprojAssemblyReference.cache

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Wishes.Manager.Domain/1.0.0": {
+        "dependencies": {
+          "Wishes.Manager.Common": "1.0.0"
+        },
+        "runtime": {
+          "Wishes.Manager.Domain.dll": {}
+        }
+      },
+      "Wishes.Manager.Common/1.0.0": {
+        "runtime": {
+          "Wishes.Manager.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Wishes.Manager.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Wishes.Manager.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.AssemblyInfoInputs.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.AssemblyInfo.cs
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.deps.json
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\bin\Debug\netcoreapp2.1\Wishes.Manager.Domain.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\bin\Debug\netcoreapp2.1\Wishes.Manager.Common.pdb
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.csprojAssemblyReference.cache
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.csproj.CopyComplete
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.dll
+C:\Users\francis.silva\Desktop\CodingTestLuizaLabs\Wishes.Manager.Domain\obj\Debug\netcoreapp2.1\Wishes.Manager.Domain.pdb
