@@ -31,7 +31,7 @@ namespace Wishes.Manager.API
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            // Swagger
+            // Add Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "API Luizalabs Wishes Manager", Version = "v1" });

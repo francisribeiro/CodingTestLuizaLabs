@@ -43,6 +43,7 @@ namespace CodingTestLuizaLabs.Repository.Generic
         /// <param name="id">Id</param>
         public void Delete(long id)
         {
+            // If the item exists we can delete it
             var result = _dataset.SingleOrDefault(i => i.Id.Equals(id));
 
             try
@@ -88,6 +89,7 @@ namespace CodingTestLuizaLabs.Repository.Generic
         {
             if (!Exists(entity.Id)) return null;
 
+            // if the item exists we can update it
             var result = _dataset.SingleOrDefault(i => i.Id.Equals(entity.Id));
 
             if (result != null)

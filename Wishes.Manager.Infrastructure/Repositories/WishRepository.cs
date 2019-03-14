@@ -34,6 +34,7 @@ namespace CodingTestLuizaLabs.Repository.Implementations
         /// <param name="productId">Product Id</param>
         public void Delete(long userId, long productId)
         {
+            // If the user exists we can delete it
             var result = _dataset.SingleOrDefault(w => w.IdUser.Equals(userId) && w.IdProduct.Equals(productId));
 
             try

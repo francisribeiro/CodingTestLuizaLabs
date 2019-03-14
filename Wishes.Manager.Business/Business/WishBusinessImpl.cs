@@ -25,8 +25,10 @@ namespace CodingTestLuizaLabs.Business.Implementations
         /// <returns>Wish list created</returns>
         public Wish[] Create(long userId, Wish[] wishList)
         {
+            // First we add all the items in the list
             foreach (Wish wish in wishList)
             {
+                // If these items don't exist we add then
                 if (!Exists(userId, wish.IdProduct))
                 {
                     wish.SetUserId(userId);
@@ -34,6 +36,7 @@ namespace CodingTestLuizaLabs.Business.Implementations
                 }
             }
 
+            // So we save the whole list at once
             _wishRepository.Save();
 
             return wishList;
